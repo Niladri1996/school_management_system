@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:id="@+id/co_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:id="@+id/rl_hh"
+            android:layout_width="match_parent"
+            android:background="@color/maincolor"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:text="View Options"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/close"
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"></ImageView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_date_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/rl_hh"
+            android:layout_marginTop="15dp"
+
+            android:layout_marginRight="15dp">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_group"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                >
+                <Spinner
+                    android:id="@+id/spinner_group"
+                    android:layout_width="match_parent"
+                    android:hint="Group"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spinner">
+
+                </Spinner>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_class"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/rl_group"
+                >
+                <Spinner
+                    android:id="@+id/spinner_class"
+                    android:autofillHints="Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spinner">
+
+                </Spinner>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_section"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/rl_class"
+                >
+                <Spinner
+                    android:id="@+id/spinner_section"
+                    android:autofillHints="Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spinner">
+
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/inputbackground"
+                android:layout_below="@id/rl_section"
+                android:layout_marginTop="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/ed_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_toLeftOf="@id/img_cal"
+                    android:hint="Select Date"
+                    android:editable="false"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    ></EditText>
+                <ImageView
+                    android:id="@+id/img_cal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/calendar"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"></ImageView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+    android:id="@+id/rl_radio"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/rl_date">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="All"></RadioButton>
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:text="Selective"></RadioButton>
+
+                </RadioGroup>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_students"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/rl_radio"
+                >
+                <Spinner
+                    android:id="@+id/spinner_students"
+                    android:autofillHints="Group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spinner">
+
+                </Spinner>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/rl_date_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/inputbackground"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:text="Cencel"></TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/inputbackground"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:text="Views"></TextView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

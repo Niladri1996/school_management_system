@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.wrkplan.newschoolmanagementsysytem">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewSchoolManagementSysytem">
+        <activity android:name=".LoginPage.LoginPage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Dashboard.Dashboard"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".TimeTable.TimeTableActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Attendence.AttendancePage_new"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StudyMaterial.StudyMaterialPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Assignment.AssignmentCalendar"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Holiday.HolidayPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NoticeBoard.NoticeBoardPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UserProfile.StudentProfilePage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StudyMaterial.SubjectDocumentPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Assignment.AssignmentSubjectPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Assignment.AssignmentPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StudentAttendance.StudentAttendance"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StudentAttendance.DisplayAttendence"
+            android:screenOrientation="portrait"/>
+       <activity android:name=".StaffAssignment.StaffAssignment"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StudyMaterial.StudyMaterialCalendar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StudentFees.StudentFees"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

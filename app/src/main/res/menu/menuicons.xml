@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/time_table"
+        android:title="Time Table"
+        android:icon="@drawable/ic_baseline_access_time_24"></item>
+
+    <item android:id="@+id/study_metarial"
+        android:title="Study Material"
+        android:icon="@drawable/ic_baseline_menu_book_24"></item>
+
+    <item android:id="@+id/attendence"
+        android:title="Attendance"
+        android:icon="@drawable/ic_baseline_present_to_all_24"></item>
+
+    <item android:id="@+id/assignment"
+        android:title="Assignment"
+        android:icon="@drawable/ic_baseline_assignment_24"></item>
+
+    <item android:id="@+id/holidays"
+        android:title="Holiday"
+        android:icon="@drawable/ic_baseline_emoji_people_24"></item>
+
+    <item android:id="@+id/notice_board"
+        android:title="Notice Board"
+        android:icon="@drawable/ic_baseline_info_24"></item>
+        <item android:id="@+id/admin_Staff_attendence"
+            android:title="Student Attendance"
+            android:icon="@drawable/ic_baseline_present_to_all_24"></item>
+        <item android:id="@+id/staff_assignment"
+            android:title="Assignment"
+            android:icon="@drawable/ic_baseline_assignment_24"></item>
+
+        <item android:id="@+id/student_fees"
+            android:title="Fees"
+            android:icon="@drawable/ic_baseline_attach_money_24"></item>
+
+    </group>
+    <group
+        android:id="@+id/nav_settings"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="Logout" />
+    </group>
+</menu>

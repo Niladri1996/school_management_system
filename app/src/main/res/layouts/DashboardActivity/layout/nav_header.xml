@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="#8CB5F9">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_students_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/student_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/student"
+                android:layout_centerHorizontal="true"></ImageView>
+            <ImageView
+                android:id="@+id/admin_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/admin"
+                android:layout_centerHorizontal="true"></ImageView>
+            <ImageView
+                android:id="@+id/staff_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/staff"
+                android:layout_centerHorizontal="true"></ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_below="@id/rl_profile"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#163F83"
+            android:textSize="22sp"></TextView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
